@@ -1,0 +1,40 @@
+@import './color.scss';
+@import './prefix.scss';
+
+.screen-boxcontrol3{
+  display: grid;
+  width: 273px;
+  background-color: black;
+  grid-template-columns: 10px 30px 10px 30px 10px 30px 10px 30px 10px 30px 10px 30px 10px 23px 10px;
+  grid-template-rows: 10px 30px 20px 30px 10px 30px 10px 30px 10px 30px 10px 30px 10px 30px 10px 30px 30px;
+  /*width: 273px;
+  *//*margin-left: 13px;
+  *//*height: 500px;
+  *//*grid-column: span 2;
+  */grid-column-start:1;
+  grid-column-end: 15;
+  grid-row-start: 1;
+  grid-row-end: 19;
+  //background: rgb(24,41,50);
+  background-size: cover;
+  transition: all .5s linear;
+
+}
+.photo-album{
+
+}
+.thinking-bubble{
+  font-size: 10px;
+  height: auto;
+  padding: 2%;
+  max-width: 200px;
+  max-height: 100px;
+  z-index: 9999999999;
+  background: yellow;
+  border-radius: 300px;
+  -webkit-border-radius: 300px;
+  -moz-border-radius: 300px;
+  -ms-border-radius: 300px;
+  -o-border-radius: 300px;
+  position: absolute;
+}

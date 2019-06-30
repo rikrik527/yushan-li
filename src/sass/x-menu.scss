@@ -1,0 +1,359 @@
+@import './color';
+
+
+.menu-boxcontrol-header {
+  position: absolute;
+  width: 100%;
+  left: 85px;
+  top: 21px;
+
+  .select-menu {
+    width: 58vw;
+    position: absolute;
+    left: 29%;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+
+    .select-service,
+    .select-about,
+    .select-fb-fans,
+    .select-ig,
+    .select-contact {
+      display: block;
+      color: white;
+      text-align: center;
+
+      &:hover {
+        color: $pink2;
+        text-shadow: 2px 2px 5px $pink8;
+      }
+    }
+
+    .select-service {}
+
+    .select-about {}
+
+    .select-fb-fans {}
+
+    .select-ig {}
+
+    .select-contact {}
+  }
+}
+
+.x-menu-pop-out,
+.x-menu-page,
+.service,
+.about,
+.fb-fans,
+.ig,
+.contact {
+  display: none;
+}
+
+.x-menu-pop-out {
+  width: 100vw;
+  height: 100vh;
+z-index: 100;
+background: url('../images/judo.png')black no-repeat;
+
+
+  filter: blur(100px);
+  position: absolute;
+  top: 0px;
+  display: none;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-gap: 30px;
+  transition: all 1s linear;
+  -webkit-transition: all 1s linear;
+  -moz-transition: all 1s linear;
+  -ms-transition: all 1s linear;
+  -o-transition: all 1s linear;
+background-position: bottom left;
+  -webkit-filter: blur(100px);
+
+  .service {
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 2;
+    display: flex;
+    font-size: 25px;
+    /* text-align: center; */
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+
+  }
+
+  .about {
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 3;
+    display: flex;
+    font-size: 25px;
+    /* text-align: center; */
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+
+  }
+
+  .fb-fans {
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 4;
+    grid-row-end: 4;
+    display: flex;
+    font-size: 25px;
+    /*text-align: center;
+    */justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+
+  }
+
+  .ig {
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 5;
+    grid-row-end: 5;
+    display: flex;
+    font-size: 25px;
+    /* text-align: center; */
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+
+  }
+
+  .contact {
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 6;
+    grid-row-end: 6;
+    display: flex;
+    font-size: 25px;
+    /* text-align: center; */
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+  }
+
+  .service,
+  .about,
+  .fb-fans,
+  .ig,
+  .contact {
+    color: pink;
+    text-shadow: 2px 2px 5px $pink7;
+
+    &:hover {
+      color: aliceblue;
+      text-shadow: 2px 2px 5px lightskyblue;
+    }
+  }
+}
+
+.service,
+.about,
+.fb-fans,
+.ig,
+.contact {
+  font-size: 14px;
+  text-align: center;
+
+}
+
+.service:hover {
+  .line1 {
+    transition:all .5s linear;
+    width: 100%;
+    -webkit-transition:all .5s linear;
+    -moz-transition:all .5s linear;
+    -ms-transition:all .5s linear;
+    -o-transition:all .5s linear;
+}
+}
+
+.about:hover {
+  .line2 {
+    width: 100%;
+    transition:all .5s linear;
+
+    -webkit-transition:all .5s linear;
+    -moz-transition:all .5s linear;
+    -ms-transition:all .5s linear;
+    -o-transition:all .5s linear;
+  }
+}
+
+.fb-fans:hover {
+  .line3 {
+    width: 100%;
+
+    transition:all .5s linear;
+
+    -webkit-transition:all .5s linear;
+    -moz-transition:all .5s linear;
+    -ms-transition:all .5s linear;
+    -o-transition:all .5s linear;
+  }
+}
+
+.ig:hover {
+  .line4 {
+    width: 100%;
+    transition:all .5s linear;
+
+    -webkit-transition:all .5s linear;
+    -moz-transition:all .5s linear;
+    -ms-transition:all .5s linear;
+    -o-transition:all .5s linear;
+  }
+}
+
+.contact:hover {
+  .line5 {
+    width: 100%;
+    transition:all .5s linear;
+
+    -webkit-transition:all .5s linear;
+    -moz-transition:all .5s linear;
+    -ms-transition:all .5s linear;
+    -o-transition:all .5s linear;
+  }
+}
+.service,.about,.contact,.fb-fans,.ig{
+  transition: all .4s linear;
+  -webkit-transition: all .4s linear;
+  -moz-transition: all .4s linear;
+  -ms-transition: all .4s linear;
+  -o-transition: all .4s linear;
+}
+.x-menu {
+  cursor: pointer;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 20px;
+  right: 2%;
+  width: 40px;
+  height: 40px;
+  margin: -20px 0 0 -20px;
+  z-index: 101;
+
+  .x {
+    width: 10px;
+    height: 30px;
+    background: $pink4;
+    align-self: baseline;
+    transform: rotateZ(90deg);
+    -webkit-transform: rotateZ(90deg);
+    -moz-transform: rotateZ(90deg);
+    -ms-transform: rotateZ(90deg);
+    -o-transform: rotateZ(90deg);
+    transition: all .1s linear;
+    -webkit-transition: all .1s linear;
+    -moz-transition: all .1s linear;
+    -ms-transition: all .1s linear;
+    -o-transition: all .1s linear;
+
+    .x-2 {
+      width: 10px;
+      height: 30px;
+      position: absolute;
+      background: $pink4;
+      transform: rotateZ(0deg);
+      -webkit-transform: rotateZ(0deg);
+      -moz-transform: rotateZ(0deg);
+      -ms-transform: rotateZ(0deg);
+      -o-transform: rotateZ(0deg);
+      /*display: none;
+          */
+      left: 13px;
+      transition: all .1s linear;
+      -webkit-transition: all .1s linear;
+      -moz-transition: all .1s linear;
+      -ms-transition: all .1s linear;
+      -o-transition: all .1s linear;
+    }
+  }
+
+  .x-p {
+    font-size: 10px;
+    position: absolute;
+    top: 35px;
+    color: white;
+  }
+
+}
+
+.line1 {
+  background: white;
+  position: absolute;
+  width: 0%;
+  height: 1px;
+  transition: all .2s linear forwards;
+  -webkit-transition: all .2s linear forwards;
+  -moz-transition: all .2s linear forwards;
+  -ms-transition: all .2s linear forwards;
+  -o-transition: all .2s linear forwards;
+}
+
+.line2 {
+  background: white;
+  position: absolute;
+  width: 0%;
+  height: 1px;
+  transition: all .2s linear forwards;
+  -webkit-transition: all .2s linear forwards;
+  -moz-transition: all .2s linear forwards;
+  -ms-transition: all .2s linear forwards;
+  -o-transition: all .2s linear forwards;
+}
+
+.line3 {
+  background: white;
+  position: absolute;
+  width: 0%;
+  height: 1px;
+  transition: all .2s linear forwards;
+  -webkit-transition: all .2s linear forwards;
+  -moz-transition: all .2s linear forwards;
+  -ms-transition: all .2s linear forwards;
+  -o-transition: all .2s linear forwards;
+}
+
+.line4 {
+  background: white;
+  position: absolute;
+  width: 0%;
+  height: 1px;
+  transition: all .2s linear forwards;
+  -webkit-transition: all .2s linear forwards;
+  -moz-transition: all .2s linear forwards;
+  -ms-transition: all .2s linear forwards;
+  -o-transition: all .2s linear forwards;
+}
+
+.line5 {
+  background: white;
+  position: absolute;
+  width: 0%;
+  height: 1px;
+  transition: all .2s linear forwards;
+  -webkit-transition: all .2s linear forwards;
+  -moz-transition: all .2s linear forwards;
+  -ms-transition: all .2s linear forwards;
+  -o-transition: all .2s linear forwards;
+}

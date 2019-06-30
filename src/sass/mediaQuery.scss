@@ -1,0 +1,126 @@
+@import './color';
+/* kindle fire */
+@media (max-device-width:800px)and(max-device-height:1280px){
+.x-menu{
+  display: none;
+}
+}
+
+/*LG */
+@media (max-device-width:384px)and(max-device-height:640px){
+  .x-menu{
+    display:flex;
+  }
+}
+/* iphonex */
+@media (max-device-width:375px)and(max-device-height:812px){
+.book-wrap{
+  width: 100vw!important;
+  height: 36vh;
+}
+.photo1-show,.photo2-show{
+  top:50%!important;
+  width:300px!important;
+  margin:-50% 0 0 -150px!important;
+
+}
+.menu-boxcontrol-header,.select-menu,.select-service,.select-about,.select-fb-fans,.select-ig,.select-contact{
+display: none;
+}
+.x-menu{
+  display:flex;
+}
+}
+/* iphone 6 6s 7 8 */
+@media (max-device-width:414px)and(max-device-height:736px) {
+.photo1-show,.photo2-show,.photo3-show,.photo4-show,.photo5-show{
+  width: 300px!important;
+  top:50%!important;
+  margin: -50% 0 0 -150px!important;
+}
+.x-menu{
+  display:flex;
+}
+}
+/* samsung */
+@media (max-device-width:360px)and(max-device-height:740px) {
+
+}
+/* ipad mini */
+@media (max-device-width:768px)and(max-device-height:1024px){
+
+}
+/* respond */
+@media screen and(min-width:1100px){
+
+
+}
+@media screen and(max-width:790px)and(min-width:600px){
+
+
+}
+@media screen and(max-width:599px)and(min-width:400px){
+
+}
+@media screen and(min-width:768px)and(max-width:4000px){
+
+}
+@media (max-width:767px){
+  .menu-boxcontrol-header,.select-menu,.select-service,.select-about,.select-fb-fans,.select-ig,.select-contact{
+    display: none;
+    }
+    .x-menu{
+      display:flex!important;
+    }
+}
+@media (min-width:768px){
+  .x-munu-pop-out,.service,.about,.contact,.fb-fans,.ig{
+    display:none!important;
+  }
+}
+/* xpreia */
+@media (max-device-width:360px)and(max-device-height:640px) {
+
+    #shan-li-image{
+        width: 90px;
+    }
+    .shan-btn{
+        background-position-y: 90%!important;
+    }
+    .x-menu{
+      display: flex;
+    }
+
+}
+/* iphone 6 plus */
+@media (max-device-width:414px)and(max-device-height:736px){
+
+}
+/* iphone 6*/
+@media (max-device-width:375px)and(max-device-height:667px){
+
+}
+/* iphone5 */
+@media (max-device-width:320px) and (max-device-height:568px){
+
+
+}
+
+/* laptop */
+@media (max-device-width:1280px)and(max-device-height:950px){
+.x-menu{
+  display: none
+}
+}
+/* laptop 2 */
+@media (max-device-width:1280px)and(max-device-height:800px){
+.x-menu{
+  display: none
+}
+}
+/* laptop 3*/
+@media (max-device-width:1440px)and(max-device-height:900px){
+.x-menu{
+  display: none;
+}
+}
